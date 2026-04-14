@@ -1,0 +1,150 @@
+/* ============================================
+   RESPONSIVE — Breakpoints
+   Breakpoints: lg 1024px | md 768px | sm 480px
+   ============================================ */
+
+/* --- Large: até 1024px --- */
+@media (max-width: 1024px) {
+  .skills__groups {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about__inner {
+    grid-template-columns: 1fr 1.2fr;
+    gap: var(--space-12);
+  }
+
+  .about__left {
+    position: relative;
+    top: auto;
+  }
+}
+
+/* --- Medium: até 768px --- */
+@media (max-width: 768px) {
+  /* Nav */
+  .nav__links,
+  .nav__cta .btn--ghost {
+    display: none;
+  }
+
+  .nav__toggle {
+    display: flex;
+  }
+
+  .nav__cta .btn--primary {
+    display: none;
+  }
+
+  /* Hero */
+  .hero__header {
+    flex-direction: column;
+  }
+
+  .hero__subtitle {
+    max-width: 100%;
+    padding-top: 0;
+  }
+
+  .hero__footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-6);
+  }
+
+  /* About */
+  .about__inner {
+    grid-template-columns: 1fr;
+    gap: var(--space-10);
+  }
+
+  .about__info {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Skills */
+  .skills__groups {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .skills__header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* Work */
+  .work__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .work__grid .project-card:first-child {
+    grid-column: span 1;
+  }
+
+  .work__header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* Footer */
+  .footer__inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-4);
+  }
+
+  /* Cursor desativado em touch */
+  .cursor,
+  .cursor-ring {
+    display: none;
+  }
+
+  body {
+    cursor: auto;
+  }
+}
+
+/* --- Small: até 480px --- */
+@media (max-width: 480px) {
+  .section {
+    padding-block: var(--space-20);
+  }
+
+  .hero {
+    padding-bottom: var(--space-16);
+  }
+
+  .skills__groups {
+    grid-template-columns: 1fr;
+  }
+
+  .hero__actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact__socials {
+    gap: var(--space-2);
+  }
+
+  .about__info {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* --- Preferência: sem animação --- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}

@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mauro Junior — Desenvolvedor Full Stack criando experiências digitais de alto impacto." />
+  <meta name="theme-color" content="#ffffff" />
+
+  <!-- Open Graph -->
+  <meta property="og:title"       content="Mauro Junior — Dev" />
+  <meta property="og:description" content="Desenvolvedor Full Stack criando experiências digitais de alto impacto." />
+  <meta property="og:type"        content="website" />
+  <meta property="og:image"       content="assets/images/og-cover.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="Mauro Junior — Dev" />
+  <meta name="twitter:description" content="Desenvolvedor Full Stack criando experiências digitais de alto impacto." />
+
+  <title>Mauro Junior — Dev</title>
+
+  <!-- Preconnect fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/reset.css" />
+  <link rel="stylesheet" href="assets/css/variables.css" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+  <link rel="stylesheet" href="assets/css/sections.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+</head>
+<body>
+
+  <!-- Cursor personalizado -->
+  <div class="cursor"      aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <!-- ======================================
+       NAV
+  ======================================= -->
+  <header class="nav" role="banner">
+    <div class="container">
+      <nav class="nav__inner" aria-label="Navegação principal">
+
+        <a href="#hero" class="nav__logo" aria-label="Mauro Junior — Início">
+          MJ<span aria-hidden="true"></span>
+        </a>
+
+        <!-- Desktop links -->
+        <ul class="nav__links" role="list">
+          <li><a href="#about"  class="nav__link">About</a></li>
+          <li><a href="#skills" class="nav__link">Skills</a></li>
+          <li><a href="#work"   class="nav__link">Work</a></li>
+        </ul>
+
+        <div class="nav__cta">
+          <a href="#contact" class="btn btn--ghost">Contact</a>
+          <a href="mailto:mauro@example.com" class="btn btn--primary">
+            Let's talk <span class="arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+
+        <!-- Mobile toggle -->
+        <button class="nav__toggle" aria-label="Abrir menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+      </nav>
+
+      <!-- Mobile menu -->
+      <div class="nav__mobile" role="navigation" aria-label="Menu mobile">
+        <a href="#about"   class="nav__link">About</a>
+        <a href="#skills"  class="nav__link">Skills</a>
+        <a href="#work"    class="nav__link">Work</a>
+        <a href="#contact" class="nav__link">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ======================================
+         HERO
+    ======================================= -->
+    <section id="hero" class="hero">
+      <div class="container">
+        <div class="hero__inner">
+
+          <div class="hero__header">
+            <h1 class="hero__heading">
+              Building digital<br><em>experiences</em> that matter.
+            </h1>
+            <p class="hero__subtitle reveal reveal-delay-2">
+              Sou um desenvolvedor Full Stack apaixonado por criar produtos
+              digitais que combinam performance, design e propósito.
+            </p>
+          </div>
+
+          <div class="hero__footer reveal reveal-delay-3">
+            <div class="hero__actions">
+              <a href="#work" class="btn btn--primary">
+                View Work <span class="arrow" aria-hidden="true">→</span>
+              </a>
+              <a href="#contact" class="btn btn--ghost">Get in touch</a>
+            </div>
+
+            <span class="hero__scroll" aria-hidden="true">
+              <span class="hero__scroll-line"></span>
+              Scroll
+            </span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================
+         ABOUT
+    ======================================= -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="about__inner">
+
+          <div class="about__left reveal">
+            <span class="label">About me</span>
+            <h2 class="heading-lg">
+              Dev que une<br>código &amp; design.
+            </h2>
+            <span class="availability-badge">
+              <span class="availability-badge__dot"></span>
+              Available for work
+            </span>
+          </div>
+
+          <div class="about__right">
+            <p class="about__text reveal reveal-delay-1">
+              Olá! Sou <strong>Mauro Junior</strong>, desenvolvedor Full Stack com
+              foco em criar aplicações web robustas e experiências de usuário
+              excepcionais. Acredito que bom código e bom design caminham juntos.
+            </p>
+            <p class="about__text reveal reveal-delay-2">
+              Trabalho com <strong>React</strong>, <strong>Django</strong> e
+              <strong>Node.js</strong>, cobrindo do front ao back com foco em
+              entregar produtos sólidos e bem construídos.
+            </p>
+
+            <div class="about__info reveal reveal-delay-4">
+              <div class="about__info-item">
+                <span class="about__info-label">Localização</span>
+                <span class="about__info-value">Brasil — Remoto</span>
+              </div>
+              <div class="about__info-item">
+                <span class="about__info-label">Experiência</span>
+                <span class="about__info-value">+X anos</span>
+              </div>
+              <div class="about__info-item">
+                <span class="about__info-label">Foco atual</span>
+                <span class="about__info-value">Full Stack</span>
+              </div>
+              <div class="about__info-item">
+                <span class="about__info-label">Status</span>
+                <span class="about__info-value">Open to offers</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- ======================================
+         SKILLS
+    ======================================= -->
+    <section id="skills" class="section section--alt">
+      <div class="container">
+        <div class="skills__inner">
+
+          <div class="skills__header reveal">
+            <div>
+              <span class="label">Stack</span>
+              <h2 class="heading-lg" style="margin-top: var(--space-4);">
+                Tecnologias &amp; ferramentas.
+              </h2>
+            </div>
+            <p class="body-base" style="max-width: 340px;">
+              Conjunto de tecnologias que uso no dia a dia para entregar
+              produtos completos, do back ao front.
+            </p>
+          </div>
+
+          <div class="skills__groups" data-stagger>
+
+            <!-- Front-end -->
+            <div class="skills__group">
+              <span class="skills__group-title">Front-end</span>
+              <ul class="skills__list" role="list">
+                <li class="skills__item">HTML &amp; CSS <span class="skills__item-dot"></span></li>
+                <li class="skills__item">JavaScript <span class="skills__item-dot"></span></li>
+                <li class="skills__item">TypeScript <span class="skills__item-dot"></span></li>
+                <li class="skills__item">React <span class="skills__item-dot"></span></li>
+                <li class="skills__item">Next.js <span class="skills__item-dot"></span></li>
+              </ul>
+            </div>
+
+            <!-- Back-end -->
+            <div class="skills__group">
+              <span class="skills__group-title">Back-end</span>
+              <ul class="skills__list" role="list">
+                <li class="skills__item">Node.js <span class="skills__item-dot"></span></li>
+                <li class="skills__item">NestJS <span class="skills__item-dot"></span></li>
+                <li class="skills__item">REST APIs <span class="skills__item-dot"></span></li>
+                <li class="skills__item">GraphQL <span class="skills__item-dot"></span></li>
+                <li class="skills__item">PostgreSQL <span class="skills__item-dot"></span></li>
+              </ul>
+            </div>
+
+            <!-- Tools -->
+            <div class="skills__group">
+              <span class="skills__group-title">Tools &amp; DevOps</span>
+              <ul class="skills__list" role="list">
+                <li class="skills__item">Git &amp; GitHub <span class="skills__item-dot"></span></li>
+                <li class="skills__item">Docker <span class="skills__item-dot"></span></li>
+                <li class="skills__item">Linux <span class="skills__item-dot"></span></li>
+                <li class="skills__item">CI/CD <span class="skills__item-dot"></span></li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- ======================================
+         WORK / PROJECTS
+    ======================================= -->
+    <section id="work" class="section">
+      <div class="container">
+        <div class="work__inner">
+
+          <div class="work__header reveal">
+            <div>
+              <span class="label">Selected work</span>
+              <h2 class="heading-lg" style="margin-top: var(--space-4);">
+                Projetos em destaque.
+              </h2>
+            </div>
+            <a href="#contact" class="btn btn--link">
+              All projects <span class="arrow" aria-hidden="true">→</span>
+            </a>
+          </div>
+
+          <div class="work__grid">
+
+            <!-- Card 1 — destaque -->
+            <article class="project-card reveal">
+              <div class="project-card__image project-card__image--placeholder">
+                <!-- Substituir por: <img src="assets/images/project-1.jpg" alt="Nome do projeto" loading="lazy" /> -->
+                <div style="width:100%;height:100%;background:linear-gradient(135deg,#f0f0f0 0%,#e0e0e0 100%);display:flex;align-items:center;justify-content:center;">
+                  <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#c0c0c0" stroke-width="1.5">
+                    <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__meta">
+                  <span class="project-card__year">2024</span>
+                </div>
+                <h3 class="project-card__title">Project Name — Featured</h3>
+                <p class="project-card__description">
+                  Descrição do projeto principal. Explique o problema que resolveu,
+                  o impacto gerado e o que torna esse trabalho especial. Um parágrafo
+                  curto e direto.
+                </p>
+                <div class="project-card__tags">
+                  <span class="tag">Next.js</span>
+                  <span class="tag">TypeScript</span>
+                  <span class="tag">PostgreSQL</span>
+                  <span class="tag">Node.js</span>
+                </div>
+              </div>
+              <div class="project-card__footer">
+                <a href="#" class="btn btn--link" aria-label="Ver projeto 1">
+                  View project <span class="arrow" aria-hidden="true">→</span>
+                </a>
+                <a href="#" class="social-link" aria-label="GitHub do projeto 1">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                  GitHub
+                </a>
+              </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="project-card reveal reveal-delay-1">
+              <div class="project-card__image project-card__image--placeholder">
+                <div style="width:100%;height:100%;background:linear-gradient(135deg,#f5f5f5 0%,#e8e8e8 100%);display:flex;align-items:center;justify-content:center;">
+                  <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#c8c8c8" stroke-width="1.5">
+                    <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__meta">
+                  <span class="project-card__year">2024</span>
+                </div>
+                <h3 class="project-card__title">Project Name 02</h3>
+                <p class="project-card__description">
+                  Descrição breve do segundo projeto. Destaque o que foi construído,
+                  tecnologias usadas e resultados obtidos.
+                </p>
+                <div class="project-card__tags">
+                  <span class="tag">React</span>
+                  <span class="tag">Node.js</span>
+                  <span class="tag">MongoDB</span>
+                </div>
+              </div>
+              <div class="project-card__footer">
+                <a href="#" class="btn btn--link" aria-label="Ver projeto 2">
+                  View project <span class="arrow" aria-hidden="true">→</span>
+                </a>
+                <a href="#" class="social-link" aria-label="GitHub do projeto 2">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                  GitHub
+                </a>
+              </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="project-card reveal reveal-delay-2">
+              <div class="project-card__image project-card__image--placeholder">
+                <div style="width:100%;height:100%;background:linear-gradient(135deg,#f0f0f0 0%,#e4e4e4 100%);display:flex;align-items:center;justify-content:center;">
+                  <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#c4c4c4" stroke-width="1.5">
+                    <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__meta">
+                  <span class="project-card__year">2023</span>
+                </div>
+                <h3 class="project-card__title">Project Name 03</h3>
+                <p class="project-card__description">
+                  Descrição breve do terceiro projeto. Contexto, solução e
+                  tecnologias que tornam ele relevante para o portfólio.
+                </p>
+                <div class="project-card__tags">
+                  <span class="tag">Vue.js</span>
+                  <span class="tag">Python</span>
+                  <span class="tag">Docker</span>
+                </div>
+              </div>
+              <div class="project-card__footer">
+                <a href="#" class="btn btn--link" aria-label="Ver projeto 3">
+                  View project <span class="arrow" aria-hidden="true">→</span>
+                </a>
+                <a href="#" class="social-link" aria-label="GitHub do projeto 3">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                  GitHub
+                </a>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- ======================================
+         CONTACT
+    ======================================= -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <div class="contact__inner">
+
+          <div class="reveal">
+            <span class="label" style="justify-content:center;">Let's work together</span>
+            <h2 class="contact__heading" style="margin-top: var(--space-4);">
+              Got a project?<br>Let's talk.
+            </h2>
+          </div>
+
+          <a href="mailto:mauro@example.com" class="contact__email reveal reveal-delay-1">
+            mauro@example.com
+          </a>
+
+          <div class="contact__socials reveal reveal-delay-2">
+            <a href="https://github.com/maurojunior" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+              GitHub
+            </a>
+            <a href="https://linkedin.com/in/maurojunior" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+              LinkedIn
+            </a>
+            <a href="https://twitter.com/maurojunior" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter / X">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.259 5.631L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77z"/>
+              </svg>
+              Twitter
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================================
+       FOOTER
+  ======================================= -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+
+        <span class="footer__copy">
+          &copy; <span id="footer-year"></span> Mauro Junior. All rights reserved.
+        </span>
+
+        <div class="footer__links">
+          <a href="#about"  class="footer__link">About</a>
+          <a href="#work"   class="footer__link">Work</a>
+          <a href="#contact" class="footer__link">Contact</a>
+        </div>
+
+        <a href="#hero" class="footer__back-top" aria-label="Voltar ao topo">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="18 15 12 9 6 15"/>
+          </svg>
+          Back to top
+        </a>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script>
+    // Ano dinâmico no footer
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>

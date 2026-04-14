@@ -1,14 +1,10 @@
 /* ============================================
-   RESPONSIVE — Breakpoints
-   Breakpoints: lg 1024px | md 768px | sm 480px
+   RESPONSIVE — Mobile first
+   Breakpoints: lg 1024px | md 768px | sm 480px | xs 360px
    ============================================ */
 
 /* --- Large: até 1024px --- */
 @media (max-width: 1024px) {
-  .skills__groups {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   .about__inner {
     grid-template-columns: 1fr 1.2fr;
     gap: var(--space-12);
@@ -18,13 +14,18 @@
     position: relative;
     top: auto;
   }
+
+  .skills__groups {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* --- Medium: até 768px --- */
 @media (max-width: 768px) {
-  /* Nav */
+
+  /* ----- Nav ----- */
   .nav__links,
-  .nav__cta .btn--ghost {
+  .nav__cta {
     display: none;
   }
 
@@ -32,68 +33,117 @@
     display: flex;
   }
 
-  .nav__cta .btn--primary {
-    display: none;
+  /* ----- Hero ----- */
+  .hero {
+    padding-top: 80px;
+    padding-bottom: var(--space-12);
+    justify-content: center;
   }
 
-  /* Hero */
+  .hero__inner {
+    gap: var(--space-8);
+  }
+
   .hero__header {
     flex-direction: column;
+    gap: var(--space-5);
+  }
+
+  .hero__heading {
+    font-size: clamp(2.4rem, 10vw, 3.5rem);
   }
 
   .hero__subtitle {
     max-width: 100%;
     padding-top: 0;
+    font-size: var(--size-base);
   }
 
   .hero__footer {
     flex-direction: column;
     align-items: flex-start;
     gap: var(--space-6);
+    padding-top: var(--space-8);
   }
 
-  /* About */
+  .hero__scroll {
+    display: none;
+  }
+
+  /* ----- About ----- */
   .about__inner {
     grid-template-columns: 1fr;
-    gap: var(--space-10);
+    gap: var(--space-8);
+  }
+
+  .about__text {
+    font-size: var(--size-base);
   }
 
   .about__info {
     grid-template-columns: 1fr 1fr;
   }
 
-  /* Skills */
-  .skills__groups {
-    grid-template-columns: 1fr 1fr;
-  }
-
+  /* ----- Skills ----- */
   .skills__header {
     flex-direction: column;
     align-items: flex-start;
+    gap: var(--space-4);
   }
 
-  /* Work */
+  .skills__groups {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-6);
+  }
+
+  /* ----- Work ----- */
+  .work__header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-4);
+  }
+
   .work__grid {
     grid-template-columns: 1fr;
+    gap: var(--space-5);
   }
 
   .work__grid .project-card:first-child {
     grid-column: span 1;
   }
 
-  .work__header {
-    flex-direction: column;
-    align-items: flex-start;
+  /* ----- Contact ----- */
+  .contact {
+    min-height: auto;
+    padding-block: var(--space-24);
   }
 
-  /* Footer */
+  .contact__inner {
+    gap: var(--space-8);
+  }
+
+  .contact__heading {
+    font-size: clamp(2.2rem, 9vw, 3.5rem);
+  }
+
+  .contact__email {
+    font-size: clamp(1rem, 4.5vw, var(--size-2xl));
+    word-break: break-all;
+    text-align: center;
+  }
+
+  /* ----- Footer ----- */
   .footer__inner {
     flex-direction: column;
     align-items: flex-start;
+    gap: var(--space-5);
+  }
+
+  .footer__links {
     gap: var(--space-4);
   }
 
-  /* Cursor desativado em touch */
+  /* ----- Cursor: desativado em touch ----- */
   .cursor,
   .cursor-ring {
     display: none;
@@ -106,29 +156,73 @@
 
 /* --- Small: até 480px --- */
 @media (max-width: 480px) {
+
+  /* ----- Geral ----- */
   .section {
-    padding-block: var(--space-20);
+    padding-block: var(--space-16);
   }
 
+  /* ----- Hero ----- */
   .hero {
-    padding-bottom: var(--space-16);
+    padding-top: 72px;
+    padding-bottom: var(--space-10);
   }
 
-  .skills__groups {
-    grid-template-columns: 1fr;
+  .hero__heading {
+    font-size: clamp(2rem, 11vw, 2.8rem);
   }
 
   .hero__actions {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .hero__actions .btn {
+    justify-content: center;
+    width: 100%;
+  }
+
+  /* ----- Skills ----- */
+  .skills__groups {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+
+  /* ----- About ----- */
+  .about__info {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-3);
+  }
+
+  /* ----- Contact ----- */
+  .contact__email {
+    font-size: var(--size-base);
+    word-break: break-all;
   }
 
   .contact__socials {
     gap: var(--space-2);
   }
 
+  /* ----- Footer ----- */
+  .footer__back-top {
+    display: none;
+  }
+}
+
+/* --- Extra small: até 360px --- */
+@media (max-width: 360px) {
+  .hero__heading {
+    font-size: 1.85rem;
+  }
+
   .about__info {
     grid-template-columns: 1fr;
+  }
+
+  .contact__heading {
+    font-size: 2rem;
   }
 }
 
